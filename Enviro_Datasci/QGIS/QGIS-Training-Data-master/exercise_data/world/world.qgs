@@ -1,0 +1,3369 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" saveUser="jordidaley" version="3.22.4-Białowieża" saveDateTime="2022-03-25T11:44:13" saveUserFull="Jordan Daley">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <wkt>PROJCRS["WGS 84 / NSIDC EASE-Grid 2.0 Global",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["US NSIDC EASE-Grid 2.0 Global",METHOD["Lambert Cylindrical Equal Area",ID["EPSG",9835]],PARAMETER["Latitude of 1st standard parallel",30,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 86°S to 86°N"],BBOX[-86,-180,86,180]],ID["EPSG",6933]]</wkt>
+      <proj4>+proj=cea +lat_ts=30 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</proj4>
+      <srsid>28242</srsid>
+      <srid>6933</srid>
+      <authid>EPSG:6933</authid>
+      <description>WGS 84 / NSIDC EASE-Grid 2.0 Global</description>
+      <projectionacronym>cea</projectionacronym>
+      <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties>
+      <Option/>
+    </customproperties>
+    <layer-tree-layer source="../buildings_reprojected.shp.gpkg|layername=buildings_reprojected.shp" legend_split_behavior="0" name="buildings_reprojected.shp" patch_size="-1,-1" checked="Qt::Checked" expanded="1" providerKey="ogr" id="buildings_reprojected_shp_307753c1_266a_4d13_a802_2ddd8d33affc" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer source="../training_data.gpkg|layername=buildings" legend_split_behavior="0" name="buildings" patch_size="-1,-1" checked="Qt::Checked" expanded="1" providerKey="ogr" id="buildings_575577ef_4d19_4b95_bbe3_0aa1d54c76fc" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer source="./RSA.shp" legend_split_behavior="0" name="RSA" patch_size="-1,-1" checked="Qt::Checked" expanded="1" providerKey="ogr" id="RSA_75061939_d0ea_4284_ac2f_498ea563f14a" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <layer-tree-layer source="./continents.shp" legend_split_behavior="0" name="continents" patch_size="0,0" checked="Qt::Checked" expanded="0" providerKey="ogr" id="continents20120404114700542" legend_exp="">
+      <customproperties>
+        <Option/>
+      </customproperties>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>continents20120404114700542</item>
+      <item>RSA_75061939_d0ea_4284_ac2f_498ea563f14a</item>
+      <item>buildings_575577ef_4d19_4b95_bbe3_0aa1d54c76fc</item>
+      <item>buildings_reprojected_shp_307753c1_266a_4d13_a802_2ddd8d33affc</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings mode="3" type="1" maxScale="0" minScale="0" scaleDependencyMode="0" self-snapping="0" tolerance="0" unit="2" intersection-snapping="0" enabled="1">
+    <individual-layer-settings>
+      <layer-setting type="1" maxScale="0" minScale="0" tolerance="12" units="1" enabled="0" id="RSA_75061939_d0ea_4284_ac2f_498ea563f14a"/>
+      <layer-setting type="1" maxScale="0" minScale="0" tolerance="12" units="1" enabled="0" id="buildings_reprojected_shp_307753c1_266a_4d13_a802_2ddd8d33affc"/>
+      <layer-setting type="1" maxScale="0" minScale="0" tolerance="12" units="1" enabled="0" id="buildings_575577ef_4d19_4b95_bbe3_0aa1d54c76fc"/>
+      <layer-setting type="1" maxScale="0" minScale="0" tolerance="10" units="1" enabled="1" id="continents20120404114700542"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <polymorphicRelations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>1197160.12215345399454236</xmin>
+      <ymin>-4268992.37029862124472857</ymin>
+      <xmax>3480857.09259139141067863</xmax>
+      <ymax>-2822223.64002919849008322</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>PROJCRS["WGS 84 / NSIDC EASE-Grid 2.0 Global",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["US NSIDC EASE-Grid 2.0 Global",METHOD["Lambert Cylindrical Equal Area",ID["EPSG",9835]],PARAMETER["Latitude of 1st standard parallel",30,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 86°S to 86°N"],BBOX[-86,-180,86,180]],ID["EPSG",6933]]</wkt>
+        <proj4>+proj=cea +lat_ts=30 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>28242</srsid>
+        <srid>6933</srid>
+        <authid>EPSG:6933</authid>
+        <description>WGS 84 / NSIDC EASE-Grid 2.0 Global</description>
+        <projectionacronym>cea</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" name="buildings_reprojected.shp" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="buildings_reprojected_shp_307753c1_266a_4d13_a802_2ddd8d33affc"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" name="buildings" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="buildings_575577ef_4d19_4b95_bbe3_0aa1d54c76fc"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" name="RSA" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="RSA_75061939_d0ea_4284_ac2f_498ea563f14a"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" name="continents" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" visible="1" layerid="continents20120404114700542"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <main-annotation-layer refreshOnNotifyEnabled="0" type="annotation" autoRefreshTime="0" refreshOnNotifyMessage="" legendPlaceholderImage="" autoRefreshEnabled="0">
+    <id>Annotations_a6b073d5_3471_4ac6_98a6_c8b2cb3e4434</id>
+    <datasource></datasource>
+    <keywordList>
+      <value></value>
+    </keywordList>
+    <layername></layername>
+    <srs>
+      <spatialrefsys>
+        <wkt>PROJCRS["WGS 84 / NSIDC EASE-Grid 2.0 Global",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["US NSIDC EASE-Grid 2.0 Global",METHOD["Lambert Cylindrical Equal Area",ID["EPSG",9835]],PARAMETER["Latitude of 1st standard parallel",30,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 86°S to 86°N"],BBOX[-86,-180,86,180]],ID["EPSG",6933]]</wkt>
+        <proj4>+proj=cea +lat_ts=30 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>28242</srsid>
+        <srid>6933</srid>
+        <authid>EPSG:6933</authid>
+        <description>WGS 84 / NSIDC EASE-Grid 2.0 Global</description>
+        <projectionacronym>cea</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </srs>
+    <resourceMetadata>
+      <identifier></identifier>
+      <parentidentifier></parentidentifier>
+      <language></language>
+      <type></type>
+      <title></title>
+      <abstract></abstract>
+      <links/>
+      <fees></fees>
+      <encoding></encoding>
+      <crs>
+        <spatialrefsys>
+          <wkt></wkt>
+          <proj4></proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description></description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym></ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </crs>
+      <extent/>
+    </resourceMetadata>
+    <items/>
+    <layerOpacity>1</layerOpacity>
+    <blendMode>0</blendMode>
+    <paintEffect/>
+  </main-annotation-layer>
+  <projectlayers>
+    <maplayer simplifyLocal="1" simplifyAlgorithm="0" autoRefreshTime="0" autoRefreshEnabled="0" readOnly="0" minScale="100000000" maxScale="0" styleCategories="AllStyleCategories" legendPlaceholderImage="" labelsEnabled="0" wkbType="MultiPolygon" symbologyReferenceScale="-1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" refreshOnNotifyMessage="" geometry="Polygon" simplifyMaxScale="1" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>1586096.93097166251391172</xmin>
+        <ymin>-4200963.90626952610909939</ymin>
+        <xmax>3167662.23001442570239305</xmax>
+        <ymax>-2770951.52014603465795517</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>16.47018883614589058</xmin>
+        <ymin>-34.82185352981651505</ymin>
+        <xmax>32.89332075404965394</xmax>
+        <ymax>-22.12624602663273521</ymax>
+      </wgs84extent>
+      <id>RSA_75061939_d0ea_4284_ac2f_498ea563f14a</id>
+      <datasource>./RSA.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>RSA</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["NSIDC EASE-Grid Global",BASEGEOGCRS["GCS_Unspecified datum based upon the International 1924 Authalic Sphere",DATUM["D_",ELLIPSOID["International_1924_Authalic_Sphere",6371228,0,LENGTHUNIT["metre",1,ID["EPSG",9001]]]],PRIMEM["Greenwich",0,ANGLEUNIT["Degree",0.0174532925199433]]],CONVERSION["unnamed",METHOD["Lambert Cylindrical Equal Area (Spherical)",ID["EPSG",9834]],PARAMETER["Latitude of 1st standard parallel",30,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["Degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1,ID["EPSG",9001]]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1,ID["EPSG",9001]]]]</wkt>
+          <proj4>+proj=cea +lat_ts=30 +lon_0=0 +x_0=0 +y_0=0 +R=6371228 +units=m +no_defs +type=crs</proj4>
+          <srsid>0</srsid>
+          <srid>0</srid>
+          <authid></authid>
+          <description>NSIDC EASE-Grid Global</description>
+          <projectionacronym></projectionacronym>
+          <ellipsoidacronym>PARAMETER:6371228:6371228</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="ISO-8859-1">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" endExpression="" durationField="" mode="0" accumulate="0" fixedDuration="0" startField="" startExpression="" durationUnit="min" enabled="0" limitMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol type="fill" clip_to_extent="1" alpha="1" name="0" force_rhr="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="196,60,57,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="196,60,57,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="OBJECTID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VertexCou" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_0" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VARNAME_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NL_NAME_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="HASC_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TYPE_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ENGTYPE_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VALIDFR_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VALIDTO_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="REMARKS_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="RegionVar" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ProvNumber" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NEV_Countr" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIRST_FIPS" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIRST_HASC" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIPS_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gadm_level" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CheckMe" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_Cod" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_C_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ScaleRank" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_C_2" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_C_3" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Country_Pr" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="DataRank" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Abbrev" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Postal" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Area_sqkm" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sameAsCity" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ADM0_A3" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MAP_COLOR" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LabelRank" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Leng" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Area" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="new_area" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" name="" index="0"/>
+        <alias field="VertexCou" name="" index="1"/>
+        <alias field="ISO" name="" index="2"/>
+        <alias field="NAME_0" name="" index="3"/>
+        <alias field="NAME_1" name="" index="4"/>
+        <alias field="VARNAME_1" name="" index="5"/>
+        <alias field="NL_NAME_1" name="" index="6"/>
+        <alias field="HASC_1" name="" index="7"/>
+        <alias field="TYPE_1" name="" index="8"/>
+        <alias field="ENGTYPE_1" name="" index="9"/>
+        <alias field="VALIDFR_1" name="" index="10"/>
+        <alias field="VALIDTO_1" name="" index="11"/>
+        <alias field="REMARKS_1" name="" index="12"/>
+        <alias field="Region" name="" index="13"/>
+        <alias field="RegionVar" name="" index="14"/>
+        <alias field="ProvNumber" name="" index="15"/>
+        <alias field="NEV_Countr" name="" index="16"/>
+        <alias field="FIRST_FIPS" name="" index="17"/>
+        <alias field="FIRST_HASC" name="" index="18"/>
+        <alias field="FIPS_1" name="" index="19"/>
+        <alias field="gadm_level" name="" index="20"/>
+        <alias field="CheckMe" name="" index="21"/>
+        <alias field="Region_Cod" name="" index="22"/>
+        <alias field="Region_C_1" name="" index="23"/>
+        <alias field="ScaleRank" name="" index="24"/>
+        <alias field="Region_C_2" name="" index="25"/>
+        <alias field="Region_C_3" name="" index="26"/>
+        <alias field="Country_Pr" name="" index="27"/>
+        <alias field="DataRank" name="" index="28"/>
+        <alias field="Abbrev" name="" index="29"/>
+        <alias field="Postal" name="" index="30"/>
+        <alias field="Area_sqkm" name="" index="31"/>
+        <alias field="sameAsCity" name="" index="32"/>
+        <alias field="ADM0_A3" name="" index="33"/>
+        <alias field="MAP_COLOR" name="" index="34"/>
+        <alias field="LabelRank" name="" index="35"/>
+        <alias field="Shape_Leng" name="" index="36"/>
+        <alias field="Shape_Area" name="" index="37"/>
+        <alias field="new_area" name="" index="38"/>
+      </aliases>
+      <defaults>
+        <default field="OBJECTID" expression="" applyOnUpdate="0"/>
+        <default field="VertexCou" expression="" applyOnUpdate="0"/>
+        <default field="ISO" expression="" applyOnUpdate="0"/>
+        <default field="NAME_0" expression="" applyOnUpdate="0"/>
+        <default field="NAME_1" expression="" applyOnUpdate="0"/>
+        <default field="VARNAME_1" expression="" applyOnUpdate="0"/>
+        <default field="NL_NAME_1" expression="" applyOnUpdate="0"/>
+        <default field="HASC_1" expression="" applyOnUpdate="0"/>
+        <default field="TYPE_1" expression="" applyOnUpdate="0"/>
+        <default field="ENGTYPE_1" expression="" applyOnUpdate="0"/>
+        <default field="VALIDFR_1" expression="" applyOnUpdate="0"/>
+        <default field="VALIDTO_1" expression="" applyOnUpdate="0"/>
+        <default field="REMARKS_1" expression="" applyOnUpdate="0"/>
+        <default field="Region" expression="" applyOnUpdate="0"/>
+        <default field="RegionVar" expression="" applyOnUpdate="0"/>
+        <default field="ProvNumber" expression="" applyOnUpdate="0"/>
+        <default field="NEV_Countr" expression="" applyOnUpdate="0"/>
+        <default field="FIRST_FIPS" expression="" applyOnUpdate="0"/>
+        <default field="FIRST_HASC" expression="" applyOnUpdate="0"/>
+        <default field="FIPS_1" expression="" applyOnUpdate="0"/>
+        <default field="gadm_level" expression="" applyOnUpdate="0"/>
+        <default field="CheckMe" expression="" applyOnUpdate="0"/>
+        <default field="Region_Cod" expression="" applyOnUpdate="0"/>
+        <default field="Region_C_1" expression="" applyOnUpdate="0"/>
+        <default field="ScaleRank" expression="" applyOnUpdate="0"/>
+        <default field="Region_C_2" expression="" applyOnUpdate="0"/>
+        <default field="Region_C_3" expression="" applyOnUpdate="0"/>
+        <default field="Country_Pr" expression="" applyOnUpdate="0"/>
+        <default field="DataRank" expression="" applyOnUpdate="0"/>
+        <default field="Abbrev" expression="" applyOnUpdate="0"/>
+        <default field="Postal" expression="" applyOnUpdate="0"/>
+        <default field="Area_sqkm" expression="" applyOnUpdate="0"/>
+        <default field="sameAsCity" expression="" applyOnUpdate="0"/>
+        <default field="ADM0_A3" expression="" applyOnUpdate="0"/>
+        <default field="MAP_COLOR" expression="" applyOnUpdate="0"/>
+        <default field="LabelRank" expression="" applyOnUpdate="0"/>
+        <default field="Shape_Leng" expression="" applyOnUpdate="0"/>
+        <default field="Shape_Area" expression="" applyOnUpdate="0"/>
+        <default field="new_area" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" field="OBJECTID" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VertexCou" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ISO" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NAME_0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NAME_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VARNAME_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NL_NAME_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="HASC_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="TYPE_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ENGTYPE_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VALIDFR_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VALIDTO_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="REMARKS_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="RegionVar" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ProvNumber" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NEV_Countr" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="FIRST_FIPS" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="FIRST_HASC" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="FIPS_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="gadm_level" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="CheckMe" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_Cod" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_C_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ScaleRank" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_C_2" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_C_3" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Country_Pr" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="DataRank" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Abbrev" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Postal" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Area_sqkm" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="sameAsCity" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ADM0_A3" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="MAP_COLOR" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="LabelRank" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Shape_Leng" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Shape_Area" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="new_area" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="OBJECTID" exp=""/>
+        <constraint desc="" field="VertexCou" exp=""/>
+        <constraint desc="" field="ISO" exp=""/>
+        <constraint desc="" field="NAME_0" exp=""/>
+        <constraint desc="" field="NAME_1" exp=""/>
+        <constraint desc="" field="VARNAME_1" exp=""/>
+        <constraint desc="" field="NL_NAME_1" exp=""/>
+        <constraint desc="" field="HASC_1" exp=""/>
+        <constraint desc="" field="TYPE_1" exp=""/>
+        <constraint desc="" field="ENGTYPE_1" exp=""/>
+        <constraint desc="" field="VALIDFR_1" exp=""/>
+        <constraint desc="" field="VALIDTO_1" exp=""/>
+        <constraint desc="" field="REMARKS_1" exp=""/>
+        <constraint desc="" field="Region" exp=""/>
+        <constraint desc="" field="RegionVar" exp=""/>
+        <constraint desc="" field="ProvNumber" exp=""/>
+        <constraint desc="" field="NEV_Countr" exp=""/>
+        <constraint desc="" field="FIRST_FIPS" exp=""/>
+        <constraint desc="" field="FIRST_HASC" exp=""/>
+        <constraint desc="" field="FIPS_1" exp=""/>
+        <constraint desc="" field="gadm_level" exp=""/>
+        <constraint desc="" field="CheckMe" exp=""/>
+        <constraint desc="" field="Region_Cod" exp=""/>
+        <constraint desc="" field="Region_C_1" exp=""/>
+        <constraint desc="" field="ScaleRank" exp=""/>
+        <constraint desc="" field="Region_C_2" exp=""/>
+        <constraint desc="" field="Region_C_3" exp=""/>
+        <constraint desc="" field="Country_Pr" exp=""/>
+        <constraint desc="" field="DataRank" exp=""/>
+        <constraint desc="" field="Abbrev" exp=""/>
+        <constraint desc="" field="Postal" exp=""/>
+        <constraint desc="" field="Area_sqkm" exp=""/>
+        <constraint desc="" field="sameAsCity" exp=""/>
+        <constraint desc="" field="ADM0_A3" exp=""/>
+        <constraint desc="" field="MAP_COLOR" exp=""/>
+        <constraint desc="" field="LabelRank" exp=""/>
+        <constraint desc="" field="Shape_Leng" exp=""/>
+        <constraint desc="" field="Shape_Area" exp=""/>
+        <constraint desc="" field="new_area" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyLocal="1" simplifyAlgorithm="0" autoRefreshTime="0" autoRefreshEnabled="0" readOnly="0" minScale="100000000" maxScale="0" styleCategories="AllStyleCategories" legendPlaceholderImage="" labelsEnabled="0" wkbType="MultiPolygon" symbologyReferenceScale="-1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" refreshOnNotifyMessage="" geometry="Polygon" simplifyMaxScale="1" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>20.360548019409201</xmin>
+        <ymin>-34.07646179199220171</ymin>
+        <xmax>20.58893585205079901</xmax>
+        <ymax>-33.99236679077149859</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>20.360548019409201</xmin>
+        <ymin>-34.07646179199220171</ymin>
+        <xmax>20.58893585205079901</xmax>
+        <ymax>-33.99236679077149859</ymax>
+      </wgs84extent>
+      <id>buildings_575577ef_4d19_4b95_bbe3_0aa1d54c76fc</id>
+      <datasource>../training_data.gpkg|layername=buildings</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>buildings</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <rights>© OpenStreetMap contributors</rights>
+        <license>https://openstreetmap.org/copyright</license>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" endExpression="" durationField="" mode="0" accumulate="0" fixedDuration="0" startField="" startExpression="" durationUnit="min" enabled="0" limitMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol type="fill" clip_to_extent="1" alpha="1" name="0" force_rhr="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="229,182,54,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="229,182,54,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="fid" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="full_id" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_id" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_type" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="healthcare:speciality" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="operator" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="height" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="internet_access:fee" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="layer" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="man_made" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sport" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="level" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:erf" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="old_name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building:roof" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="opening_hours" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="description" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wikidata" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name:en" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:housenumber:source" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name:af" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="email" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="service_times" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fax" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="security" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="information" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sahra" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="religion" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="denomination" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="office" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="internet_access" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:website" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:phone" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:mobile" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:email" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="start_date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="national_monument" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="social_facility:for" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="social_facility" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:country" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="website" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="stars" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="phone" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wheelchair" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="cuisine" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="healthcare" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="shop" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brand:wikidata" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brand" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:housenumber" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:city" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="drive_through" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="atm" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amenity" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:street" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:postcode" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:housename" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aeroway" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="roof:levels" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="tourism" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building:walls" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building:levels" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="fid" name="" index="0"/>
+        <alias field="full_id" name="" index="1"/>
+        <alias field="osm_id" name="" index="2"/>
+        <alias field="osm_type" name="" index="3"/>
+        <alias field="building" name="" index="4"/>
+        <alias field="healthcare:speciality" name="" index="5"/>
+        <alias field="operator" name="" index="6"/>
+        <alias field="height" name="" index="7"/>
+        <alias field="internet_access:fee" name="" index="8"/>
+        <alias field="layer" name="" index="9"/>
+        <alias field="man_made" name="" index="10"/>
+        <alias field="sport" name="" index="11"/>
+        <alias field="level" name="" index="12"/>
+        <alias field="addr:erf" name="" index="13"/>
+        <alias field="old_name" name="" index="14"/>
+        <alias field="building:roof" name="" index="15"/>
+        <alias field="opening_hours" name="" index="16"/>
+        <alias field="description" name="" index="17"/>
+        <alias field="wikidata" name="" index="18"/>
+        <alias field="name:en" name="" index="19"/>
+        <alias field="addr:housenumber:source" name="" index="20"/>
+        <alias field="name:af" name="" index="21"/>
+        <alias field="email" name="" index="22"/>
+        <alias field="service_times" name="" index="23"/>
+        <alias field="fax" name="" index="24"/>
+        <alias field="security" name="" index="25"/>
+        <alias field="information" name="" index="26"/>
+        <alias field="sahra" name="" index="27"/>
+        <alias field="religion" name="" index="28"/>
+        <alias field="denomination" name="" index="29"/>
+        <alias field="office" name="" index="30"/>
+        <alias field="internet_access" name="" index="31"/>
+        <alias field="contact:website" name="" index="32"/>
+        <alias field="contact:phone" name="" index="33"/>
+        <alias field="contact:mobile" name="" index="34"/>
+        <alias field="contact:email" name="" index="35"/>
+        <alias field="start_date" name="" index="36"/>
+        <alias field="national_monument" name="" index="37"/>
+        <alias field="social_facility:for" name="" index="38"/>
+        <alias field="social_facility" name="" index="39"/>
+        <alias field="addr:country" name="" index="40"/>
+        <alias field="website" name="" index="41"/>
+        <alias field="stars" name="" index="42"/>
+        <alias field="phone" name="" index="43"/>
+        <alias field="wheelchair" name="" index="44"/>
+        <alias field="cuisine" name="" index="45"/>
+        <alias field="healthcare" name="" index="46"/>
+        <alias field="shop" name="" index="47"/>
+        <alias field="brand:wikidata" name="" index="48"/>
+        <alias field="brand" name="" index="49"/>
+        <alias field="addr:housenumber" name="" index="50"/>
+        <alias field="addr:city" name="" index="51"/>
+        <alias field="drive_through" name="" index="52"/>
+        <alias field="atm" name="" index="53"/>
+        <alias field="amenity" name="" index="54"/>
+        <alias field="addr:street" name="" index="55"/>
+        <alias field="addr:postcode" name="" index="56"/>
+        <alias field="addr:housename" name="" index="57"/>
+        <alias field="aeroway" name="" index="58"/>
+        <alias field="roof:levels" name="" index="59"/>
+        <alias field="tourism" name="" index="60"/>
+        <alias field="type" name="" index="61"/>
+        <alias field="name" name="" index="62"/>
+        <alias field="building:walls" name="" index="63"/>
+        <alias field="building:levels" name="" index="64"/>
+      </aliases>
+      <defaults>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="full_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_type" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="healthcare:speciality" expression="" applyOnUpdate="0"/>
+        <default field="operator" expression="" applyOnUpdate="0"/>
+        <default field="height" expression="" applyOnUpdate="0"/>
+        <default field="internet_access:fee" expression="" applyOnUpdate="0"/>
+        <default field="layer" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="level" expression="" applyOnUpdate="0"/>
+        <default field="addr:erf" expression="" applyOnUpdate="0"/>
+        <default field="old_name" expression="" applyOnUpdate="0"/>
+        <default field="building:roof" expression="" applyOnUpdate="0"/>
+        <default field="opening_hours" expression="" applyOnUpdate="0"/>
+        <default field="description" expression="" applyOnUpdate="0"/>
+        <default field="wikidata" expression="" applyOnUpdate="0"/>
+        <default field="name:en" expression="" applyOnUpdate="0"/>
+        <default field="addr:housenumber:source" expression="" applyOnUpdate="0"/>
+        <default field="name:af" expression="" applyOnUpdate="0"/>
+        <default field="email" expression="" applyOnUpdate="0"/>
+        <default field="service_times" expression="" applyOnUpdate="0"/>
+        <default field="fax" expression="" applyOnUpdate="0"/>
+        <default field="security" expression="" applyOnUpdate="0"/>
+        <default field="information" expression="" applyOnUpdate="0"/>
+        <default field="sahra" expression="" applyOnUpdate="0"/>
+        <default field="religion" expression="" applyOnUpdate="0"/>
+        <default field="denomination" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="internet_access" expression="" applyOnUpdate="0"/>
+        <default field="contact:website" expression="" applyOnUpdate="0"/>
+        <default field="contact:phone" expression="" applyOnUpdate="0"/>
+        <default field="contact:mobile" expression="" applyOnUpdate="0"/>
+        <default field="contact:email" expression="" applyOnUpdate="0"/>
+        <default field="start_date" expression="" applyOnUpdate="0"/>
+        <default field="national_monument" expression="" applyOnUpdate="0"/>
+        <default field="social_facility:for" expression="" applyOnUpdate="0"/>
+        <default field="social_facility" expression="" applyOnUpdate="0"/>
+        <default field="addr:country" expression="" applyOnUpdate="0"/>
+        <default field="website" expression="" applyOnUpdate="0"/>
+        <default field="stars" expression="" applyOnUpdate="0"/>
+        <default field="phone" expression="" applyOnUpdate="0"/>
+        <default field="wheelchair" expression="" applyOnUpdate="0"/>
+        <default field="cuisine" expression="" applyOnUpdate="0"/>
+        <default field="healthcare" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="brand:wikidata" expression="" applyOnUpdate="0"/>
+        <default field="brand" expression="" applyOnUpdate="0"/>
+        <default field="addr:housenumber" expression="" applyOnUpdate="0"/>
+        <default field="addr:city" expression="" applyOnUpdate="0"/>
+        <default field="drive_through" expression="" applyOnUpdate="0"/>
+        <default field="atm" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="addr:street" expression="" applyOnUpdate="0"/>
+        <default field="addr:postcode" expression="" applyOnUpdate="0"/>
+        <default field="addr:housename" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="roof:levels" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="building:walls" expression="" applyOnUpdate="0"/>
+        <default field="building:levels" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" field="fid" exp_strength="0" constraints="3" notnull_strength="1"/>
+        <constraint unique_strength="0" field="full_id" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="osm_id" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="osm_type" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="healthcare:speciality" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="operator" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="height" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="internet_access:fee" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="layer" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="man_made" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="sport" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="level" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:erf" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="old_name" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building:roof" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="opening_hours" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="description" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="wikidata" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="name:en" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:housenumber:source" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="name:af" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="email" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="service_times" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="fax" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="security" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="information" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="sahra" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="religion" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="denomination" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="office" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="internet_access" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:website" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:phone" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:mobile" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:email" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="start_date" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="national_monument" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="social_facility:for" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="social_facility" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:country" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="website" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="stars" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="phone" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="wheelchair" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="cuisine" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="healthcare" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="shop" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="brand:wikidata" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="brand" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:housenumber" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:city" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="drive_through" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="atm" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="amenity" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:street" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:postcode" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:housename" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="aeroway" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="roof:levels" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="tourism" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="type" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="name" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building:walls" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building:levels" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="fid" exp=""/>
+        <constraint desc="" field="full_id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="osm_type" exp=""/>
+        <constraint desc="" field="building" exp=""/>
+        <constraint desc="" field="healthcare:speciality" exp=""/>
+        <constraint desc="" field="operator" exp=""/>
+        <constraint desc="" field="height" exp=""/>
+        <constraint desc="" field="internet_access:fee" exp=""/>
+        <constraint desc="" field="layer" exp=""/>
+        <constraint desc="" field="man_made" exp=""/>
+        <constraint desc="" field="sport" exp=""/>
+        <constraint desc="" field="level" exp=""/>
+        <constraint desc="" field="addr:erf" exp=""/>
+        <constraint desc="" field="old_name" exp=""/>
+        <constraint desc="" field="building:roof" exp=""/>
+        <constraint desc="" field="opening_hours" exp=""/>
+        <constraint desc="" field="description" exp=""/>
+        <constraint desc="" field="wikidata" exp=""/>
+        <constraint desc="" field="name:en" exp=""/>
+        <constraint desc="" field="addr:housenumber:source" exp=""/>
+        <constraint desc="" field="name:af" exp=""/>
+        <constraint desc="" field="email" exp=""/>
+        <constraint desc="" field="service_times" exp=""/>
+        <constraint desc="" field="fax" exp=""/>
+        <constraint desc="" field="security" exp=""/>
+        <constraint desc="" field="information" exp=""/>
+        <constraint desc="" field="sahra" exp=""/>
+        <constraint desc="" field="religion" exp=""/>
+        <constraint desc="" field="denomination" exp=""/>
+        <constraint desc="" field="office" exp=""/>
+        <constraint desc="" field="internet_access" exp=""/>
+        <constraint desc="" field="contact:website" exp=""/>
+        <constraint desc="" field="contact:phone" exp=""/>
+        <constraint desc="" field="contact:mobile" exp=""/>
+        <constraint desc="" field="contact:email" exp=""/>
+        <constraint desc="" field="start_date" exp=""/>
+        <constraint desc="" field="national_monument" exp=""/>
+        <constraint desc="" field="social_facility:for" exp=""/>
+        <constraint desc="" field="social_facility" exp=""/>
+        <constraint desc="" field="addr:country" exp=""/>
+        <constraint desc="" field="website" exp=""/>
+        <constraint desc="" field="stars" exp=""/>
+        <constraint desc="" field="phone" exp=""/>
+        <constraint desc="" field="wheelchair" exp=""/>
+        <constraint desc="" field="cuisine" exp=""/>
+        <constraint desc="" field="healthcare" exp=""/>
+        <constraint desc="" field="shop" exp=""/>
+        <constraint desc="" field="brand:wikidata" exp=""/>
+        <constraint desc="" field="brand" exp=""/>
+        <constraint desc="" field="addr:housenumber" exp=""/>
+        <constraint desc="" field="addr:city" exp=""/>
+        <constraint desc="" field="drive_through" exp=""/>
+        <constraint desc="" field="atm" exp=""/>
+        <constraint desc="" field="amenity" exp=""/>
+        <constraint desc="" field="addr:street" exp=""/>
+        <constraint desc="" field="addr:postcode" exp=""/>
+        <constraint desc="" field="addr:housename" exp=""/>
+        <constraint desc="" field="aeroway" exp=""/>
+        <constraint desc="" field="roof:levels" exp=""/>
+        <constraint desc="" field="tourism" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="building:walls" exp=""/>
+        <constraint desc="" field="building:levels" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyLocal="1" simplifyAlgorithm="0" autoRefreshTime="0" autoRefreshEnabled="0" readOnly="0" minScale="100000000" maxScale="0" styleCategories="AllStyleCategories" legendPlaceholderImage="" labelsEnabled="0" wkbType="MultiPolygon" symbologyReferenceScale="-1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" refreshOnNotifyMessage="" geometry="Polygon" simplifyMaxScale="1" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>440977.7254958680132404</xmin>
+        <ymin>6229231.84480230044573545</ymin>
+        <xmax>462039.71700905199395493</xmax>
+        <ymax>6238511.35903884004801512</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>20.360304620051771</xmin>
+        <ymin>-34.07698332126115304</ymin>
+        <xmax>20.58897597400608959</xmax>
+        <ymax>-33.9923215583487206</ymax>
+      </wgs84extent>
+      <id>buildings_reprojected_shp_307753c1_266a_4d13_a802_2ddd8d33affc</id>
+      <datasource>../buildings_reprojected.shp.gpkg|layername=buildings_reprojected.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>buildings_reprojected.shp</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>PROJCRS["WGS 84 / UTM zone 34S",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["UTM zone 34S",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",21,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",10000000,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["(E)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["(N)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - S hemisphere - 18°E to 24°E - by country"],BBOX[-80,18,0,24]],ID["EPSG",32734]]</wkt>
+          <proj4>+proj=utm +zone=34 +south +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3184</srsid>
+          <srid>32734</srid>
+          <authid>EPSG:32734</authid>
+          <description>WGS 84 / UTM zone 34S</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <rights>© OpenStreetMap contributors</rights>
+        <license>https://openstreetmap.org/copyright</license>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" endExpression="" durationField="" mode="0" accumulate="0" fixedDuration="0" startField="" startExpression="" durationUnit="min" enabled="0" limitMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol type="fill" clip_to_extent="1" alpha="1" name="0" force_rhr="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="225,89,137,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="35,35,35,255" name="outline_color"/>
+                <Option type="QString" value="solid" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="225,89,137,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks type="StringList">
+          <Option type="QString" value=""/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="fid" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="full_id" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_id" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="osm_type" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="healthcare:speciality" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="operator" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="height" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="internet_access:fee" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="layer" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="man_made" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sport" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="level" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:erf" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="old_name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building:roof" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="opening_hours" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="description" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wikidata" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name:en" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:housenumber:source" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name:af" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="email" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="service_times" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="fax" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="security" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="information" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sahra" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="religion" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="denomination" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="office" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="internet_access" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:website" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:phone" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:mobile" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="contact:email" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="start_date" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="national_monument" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="social_facility:for" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="social_facility" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:country" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="website" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="stars" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="phone" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="wheelchair" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="cuisine" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="healthcare" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="shop" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brand:wikidata" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="brand" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:housenumber" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:city" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="drive_through" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="atm" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="amenity" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:street" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:postcode" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="addr:housename" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="aeroway" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="roof:levels" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="tourism" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="type" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="name" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building:walls" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="building:levels" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="fid" name="" index="0"/>
+        <alias field="full_id" name="" index="1"/>
+        <alias field="osm_id" name="" index="2"/>
+        <alias field="osm_type" name="" index="3"/>
+        <alias field="building" name="" index="4"/>
+        <alias field="healthcare:speciality" name="" index="5"/>
+        <alias field="operator" name="" index="6"/>
+        <alias field="height" name="" index="7"/>
+        <alias field="internet_access:fee" name="" index="8"/>
+        <alias field="layer" name="" index="9"/>
+        <alias field="man_made" name="" index="10"/>
+        <alias field="sport" name="" index="11"/>
+        <alias field="level" name="" index="12"/>
+        <alias field="addr:erf" name="" index="13"/>
+        <alias field="old_name" name="" index="14"/>
+        <alias field="building:roof" name="" index="15"/>
+        <alias field="opening_hours" name="" index="16"/>
+        <alias field="description" name="" index="17"/>
+        <alias field="wikidata" name="" index="18"/>
+        <alias field="name:en" name="" index="19"/>
+        <alias field="addr:housenumber:source" name="" index="20"/>
+        <alias field="name:af" name="" index="21"/>
+        <alias field="email" name="" index="22"/>
+        <alias field="service_times" name="" index="23"/>
+        <alias field="fax" name="" index="24"/>
+        <alias field="security" name="" index="25"/>
+        <alias field="information" name="" index="26"/>
+        <alias field="sahra" name="" index="27"/>
+        <alias field="religion" name="" index="28"/>
+        <alias field="denomination" name="" index="29"/>
+        <alias field="office" name="" index="30"/>
+        <alias field="internet_access" name="" index="31"/>
+        <alias field="contact:website" name="" index="32"/>
+        <alias field="contact:phone" name="" index="33"/>
+        <alias field="contact:mobile" name="" index="34"/>
+        <alias field="contact:email" name="" index="35"/>
+        <alias field="start_date" name="" index="36"/>
+        <alias field="national_monument" name="" index="37"/>
+        <alias field="social_facility:for" name="" index="38"/>
+        <alias field="social_facility" name="" index="39"/>
+        <alias field="addr:country" name="" index="40"/>
+        <alias field="website" name="" index="41"/>
+        <alias field="stars" name="" index="42"/>
+        <alias field="phone" name="" index="43"/>
+        <alias field="wheelchair" name="" index="44"/>
+        <alias field="cuisine" name="" index="45"/>
+        <alias field="healthcare" name="" index="46"/>
+        <alias field="shop" name="" index="47"/>
+        <alias field="brand:wikidata" name="" index="48"/>
+        <alias field="brand" name="" index="49"/>
+        <alias field="addr:housenumber" name="" index="50"/>
+        <alias field="addr:city" name="" index="51"/>
+        <alias field="drive_through" name="" index="52"/>
+        <alias field="atm" name="" index="53"/>
+        <alias field="amenity" name="" index="54"/>
+        <alias field="addr:street" name="" index="55"/>
+        <alias field="addr:postcode" name="" index="56"/>
+        <alias field="addr:housename" name="" index="57"/>
+        <alias field="aeroway" name="" index="58"/>
+        <alias field="roof:levels" name="" index="59"/>
+        <alias field="tourism" name="" index="60"/>
+        <alias field="type" name="" index="61"/>
+        <alias field="name" name="" index="62"/>
+        <alias field="building:walls" name="" index="63"/>
+        <alias field="building:levels" name="" index="64"/>
+      </aliases>
+      <defaults>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="full_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_type" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="healthcare:speciality" expression="" applyOnUpdate="0"/>
+        <default field="operator" expression="" applyOnUpdate="0"/>
+        <default field="height" expression="" applyOnUpdate="0"/>
+        <default field="internet_access:fee" expression="" applyOnUpdate="0"/>
+        <default field="layer" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="level" expression="" applyOnUpdate="0"/>
+        <default field="addr:erf" expression="" applyOnUpdate="0"/>
+        <default field="old_name" expression="" applyOnUpdate="0"/>
+        <default field="building:roof" expression="" applyOnUpdate="0"/>
+        <default field="opening_hours" expression="" applyOnUpdate="0"/>
+        <default field="description" expression="" applyOnUpdate="0"/>
+        <default field="wikidata" expression="" applyOnUpdate="0"/>
+        <default field="name:en" expression="" applyOnUpdate="0"/>
+        <default field="addr:housenumber:source" expression="" applyOnUpdate="0"/>
+        <default field="name:af" expression="" applyOnUpdate="0"/>
+        <default field="email" expression="" applyOnUpdate="0"/>
+        <default field="service_times" expression="" applyOnUpdate="0"/>
+        <default field="fax" expression="" applyOnUpdate="0"/>
+        <default field="security" expression="" applyOnUpdate="0"/>
+        <default field="information" expression="" applyOnUpdate="0"/>
+        <default field="sahra" expression="" applyOnUpdate="0"/>
+        <default field="religion" expression="" applyOnUpdate="0"/>
+        <default field="denomination" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="internet_access" expression="" applyOnUpdate="0"/>
+        <default field="contact:website" expression="" applyOnUpdate="0"/>
+        <default field="contact:phone" expression="" applyOnUpdate="0"/>
+        <default field="contact:mobile" expression="" applyOnUpdate="0"/>
+        <default field="contact:email" expression="" applyOnUpdate="0"/>
+        <default field="start_date" expression="" applyOnUpdate="0"/>
+        <default field="national_monument" expression="" applyOnUpdate="0"/>
+        <default field="social_facility:for" expression="" applyOnUpdate="0"/>
+        <default field="social_facility" expression="" applyOnUpdate="0"/>
+        <default field="addr:country" expression="" applyOnUpdate="0"/>
+        <default field="website" expression="" applyOnUpdate="0"/>
+        <default field="stars" expression="" applyOnUpdate="0"/>
+        <default field="phone" expression="" applyOnUpdate="0"/>
+        <default field="wheelchair" expression="" applyOnUpdate="0"/>
+        <default field="cuisine" expression="" applyOnUpdate="0"/>
+        <default field="healthcare" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="brand:wikidata" expression="" applyOnUpdate="0"/>
+        <default field="brand" expression="" applyOnUpdate="0"/>
+        <default field="addr:housenumber" expression="" applyOnUpdate="0"/>
+        <default field="addr:city" expression="" applyOnUpdate="0"/>
+        <default field="drive_through" expression="" applyOnUpdate="0"/>
+        <default field="atm" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="addr:street" expression="" applyOnUpdate="0"/>
+        <default field="addr:postcode" expression="" applyOnUpdate="0"/>
+        <default field="addr:housename" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="roof:levels" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="building:walls" expression="" applyOnUpdate="0"/>
+        <default field="building:levels" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" field="fid" exp_strength="0" constraints="3" notnull_strength="1"/>
+        <constraint unique_strength="0" field="full_id" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="osm_id" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="osm_type" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="healthcare:speciality" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="operator" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="height" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="internet_access:fee" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="layer" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="man_made" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="sport" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="level" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:erf" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="old_name" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building:roof" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="opening_hours" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="description" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="wikidata" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="name:en" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:housenumber:source" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="name:af" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="email" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="service_times" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="fax" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="security" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="information" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="sahra" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="religion" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="denomination" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="office" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="internet_access" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:website" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:phone" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:mobile" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="contact:email" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="start_date" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="national_monument" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="social_facility:for" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="social_facility" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:country" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="website" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="stars" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="phone" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="wheelchair" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="cuisine" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="healthcare" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="shop" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="brand:wikidata" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="brand" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:housenumber" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:city" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="drive_through" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="atm" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="amenity" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:street" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:postcode" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="addr:housename" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="aeroway" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="roof:levels" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="tourism" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="type" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="name" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building:walls" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="building:levels" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="fid" exp=""/>
+        <constraint desc="" field="full_id" exp=""/>
+        <constraint desc="" field="osm_id" exp=""/>
+        <constraint desc="" field="osm_type" exp=""/>
+        <constraint desc="" field="building" exp=""/>
+        <constraint desc="" field="healthcare:speciality" exp=""/>
+        <constraint desc="" field="operator" exp=""/>
+        <constraint desc="" field="height" exp=""/>
+        <constraint desc="" field="internet_access:fee" exp=""/>
+        <constraint desc="" field="layer" exp=""/>
+        <constraint desc="" field="man_made" exp=""/>
+        <constraint desc="" field="sport" exp=""/>
+        <constraint desc="" field="level" exp=""/>
+        <constraint desc="" field="addr:erf" exp=""/>
+        <constraint desc="" field="old_name" exp=""/>
+        <constraint desc="" field="building:roof" exp=""/>
+        <constraint desc="" field="opening_hours" exp=""/>
+        <constraint desc="" field="description" exp=""/>
+        <constraint desc="" field="wikidata" exp=""/>
+        <constraint desc="" field="name:en" exp=""/>
+        <constraint desc="" field="addr:housenumber:source" exp=""/>
+        <constraint desc="" field="name:af" exp=""/>
+        <constraint desc="" field="email" exp=""/>
+        <constraint desc="" field="service_times" exp=""/>
+        <constraint desc="" field="fax" exp=""/>
+        <constraint desc="" field="security" exp=""/>
+        <constraint desc="" field="information" exp=""/>
+        <constraint desc="" field="sahra" exp=""/>
+        <constraint desc="" field="religion" exp=""/>
+        <constraint desc="" field="denomination" exp=""/>
+        <constraint desc="" field="office" exp=""/>
+        <constraint desc="" field="internet_access" exp=""/>
+        <constraint desc="" field="contact:website" exp=""/>
+        <constraint desc="" field="contact:phone" exp=""/>
+        <constraint desc="" field="contact:mobile" exp=""/>
+        <constraint desc="" field="contact:email" exp=""/>
+        <constraint desc="" field="start_date" exp=""/>
+        <constraint desc="" field="national_monument" exp=""/>
+        <constraint desc="" field="social_facility:for" exp=""/>
+        <constraint desc="" field="social_facility" exp=""/>
+        <constraint desc="" field="addr:country" exp=""/>
+        <constraint desc="" field="website" exp=""/>
+        <constraint desc="" field="stars" exp=""/>
+        <constraint desc="" field="phone" exp=""/>
+        <constraint desc="" field="wheelchair" exp=""/>
+        <constraint desc="" field="cuisine" exp=""/>
+        <constraint desc="" field="healthcare" exp=""/>
+        <constraint desc="" field="shop" exp=""/>
+        <constraint desc="" field="brand:wikidata" exp=""/>
+        <constraint desc="" field="brand" exp=""/>
+        <constraint desc="" field="addr:housenumber" exp=""/>
+        <constraint desc="" field="addr:city" exp=""/>
+        <constraint desc="" field="drive_through" exp=""/>
+        <constraint desc="" field="atm" exp=""/>
+        <constraint desc="" field="amenity" exp=""/>
+        <constraint desc="" field="addr:street" exp=""/>
+        <constraint desc="" field="addr:postcode" exp=""/>
+        <constraint desc="" field="addr:housename" exp=""/>
+        <constraint desc="" field="aeroway" exp=""/>
+        <constraint desc="" field="roof:levels" exp=""/>
+        <constraint desc="" field="tourism" exp=""/>
+        <constraint desc="" field="type" exp=""/>
+        <constraint desc="" field="name" exp=""/>
+        <constraint desc="" field="building:walls" exp=""/>
+        <constraint desc="" field="building:levels" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer simplifyLocal="1" simplifyAlgorithm="0" autoRefreshTime="0" autoRefreshEnabled="0" readOnly="0" minScale="100000000" maxScale="0" styleCategories="AllStyleCategories" legendPlaceholderImage="" labelsEnabled="1" wkbType="MultiPolygon" symbologyReferenceScale="-1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="1" simplifyDrawingTol="1" refreshOnNotifyMessage="" geometry="Polygon" simplifyMaxScale="1" refreshOnNotifyEnabled="0">
+      <extent>
+        <xmin>-179.99999999990004085</xmin>
+        <ymin>-55.91477792755927112</ymin>
+        <xmax>180.00000000010004442</xmax>
+        <ymax>83.63432689077342275</ymax>
+      </extent>
+      <wgs84extent>
+        <xmin>-179.99999999990004085</xmin>
+        <ymin>-55.91477792755927112</ymin>
+        <xmax>180.00000000010004442</xmax>
+        <ymax>83.63432689077342275</ymax>
+      </wgs84extent>
+      <id>continents20120404114700542</id>
+      <datasource>./continents.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>continents</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],USAGE[SCOPE["unknown"],AREA["World"],BBOX[-90,-180,90,180]],ID["EPSG",4326]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="predefinito">
+        <map-layer-style name="predefinito"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <metadataUrls/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+        <Private>0</Private>
+      </flags>
+      <temporal endField="" endExpression="" durationField="" mode="0" accumulate="0" fixedDuration="0" startField="" startExpression="" durationUnit="min" enabled="0" limitMode="0">
+        <fixedRange>
+          <start></start>
+          <end></end>
+        </fixedRange>
+      </temporal>
+      <renderer-v2 type="singleSymbol" referencescale="-1" symbollevels="0" enableorderby="0" forceraster="0">
+        <symbols>
+          <symbol type="fill" clip_to_extent="1" alpha="1" name="0" force_rhr="0">
+            <data_defined_properties>
+              <Option type="Map">
+                <Option type="QString" value="" name="name"/>
+                <Option name="properties"/>
+                <Option type="QString" value="collection" name="type"/>
+              </Option>
+            </data_defined_properties>
+            <layer locked="0" class="SimpleFill" pass="0" enabled="1">
+              <Option type="Map">
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="border_width_map_unit_scale"/>
+                <Option type="QString" value="159,159,159,255" name="color"/>
+                <Option type="QString" value="bevel" name="joinstyle"/>
+                <Option type="QString" value="0,0" name="offset"/>
+                <Option type="QString" value="3x:0,0,0,0,0,0" name="offset_map_unit_scale"/>
+                <Option type="QString" value="MM" name="offset_unit"/>
+                <Option type="QString" value="0,0,0,255" name="outline_color"/>
+                <Option type="QString" value="no" name="outline_style"/>
+                <Option type="QString" value="0.26" name="outline_width"/>
+                <Option type="QString" value="MM" name="outline_width_unit"/>
+                <Option type="QString" value="solid" name="style"/>
+              </Option>
+              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="color" v="159,159,159,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option type="QString" value="" name="name"/>
+                  <Option name="properties"/>
+                  <Option type="QString" value="collection" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <Option/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <legend type="default-vector" showLabelLegend="0"/>
+      <referencedLayers/>
+      <fieldConfiguration>
+        <field name="OBJECTID" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VertexCou" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ISO" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_0" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VARNAME_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NL_NAME_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="HASC_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="TYPE_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ENGTYPE_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VALIDFR_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="VALIDTO_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="REMARKS_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="RegionVar" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ProvNumber" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NEV_Countr" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIRST_FIPS" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIRST_HASC" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FIPS_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gadm_level" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CheckMe" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_Cod" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_C_1" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ScaleRank" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_C_2" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Region_C_3" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Country_Pr" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="DataRank" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Abbrev" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Postal" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Area_sqkm" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="sameAsCity" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ADM0_A3" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MAP_COLOR" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LabelRank" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Leng" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="Shape_Area" configurationFlags="None">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="OBJECTID" name="" index="0"/>
+        <alias field="VertexCou" name="" index="1"/>
+        <alias field="ISO" name="" index="2"/>
+        <alias field="NAME_0" name="" index="3"/>
+        <alias field="NAME_1" name="" index="4"/>
+        <alias field="VARNAME_1" name="" index="5"/>
+        <alias field="NL_NAME_1" name="" index="6"/>
+        <alias field="HASC_1" name="" index="7"/>
+        <alias field="TYPE_1" name="" index="8"/>
+        <alias field="ENGTYPE_1" name="" index="9"/>
+        <alias field="VALIDFR_1" name="" index="10"/>
+        <alias field="VALIDTO_1" name="" index="11"/>
+        <alias field="REMARKS_1" name="" index="12"/>
+        <alias field="Region" name="" index="13"/>
+        <alias field="RegionVar" name="" index="14"/>
+        <alias field="ProvNumber" name="" index="15"/>
+        <alias field="NEV_Countr" name="" index="16"/>
+        <alias field="FIRST_FIPS" name="" index="17"/>
+        <alias field="FIRST_HASC" name="" index="18"/>
+        <alias field="FIPS_1" name="" index="19"/>
+        <alias field="gadm_level" name="" index="20"/>
+        <alias field="CheckMe" name="" index="21"/>
+        <alias field="Region_Cod" name="" index="22"/>
+        <alias field="Region_C_1" name="" index="23"/>
+        <alias field="ScaleRank" name="" index="24"/>
+        <alias field="Region_C_2" name="" index="25"/>
+        <alias field="Region_C_3" name="" index="26"/>
+        <alias field="Country_Pr" name="" index="27"/>
+        <alias field="DataRank" name="" index="28"/>
+        <alias field="Abbrev" name="" index="29"/>
+        <alias field="Postal" name="" index="30"/>
+        <alias field="Area_sqkm" name="" index="31"/>
+        <alias field="sameAsCity" name="" index="32"/>
+        <alias field="ADM0_A3" name="" index="33"/>
+        <alias field="MAP_COLOR" name="" index="34"/>
+        <alias field="LabelRank" name="" index="35"/>
+        <alias field="Shape_Leng" name="" index="36"/>
+        <alias field="Shape_Area" name="" index="37"/>
+      </aliases>
+      <defaults>
+        <default field="OBJECTID" expression="" applyOnUpdate="0"/>
+        <default field="VertexCou" expression="" applyOnUpdate="0"/>
+        <default field="ISO" expression="" applyOnUpdate="0"/>
+        <default field="NAME_0" expression="" applyOnUpdate="0"/>
+        <default field="NAME_1" expression="" applyOnUpdate="0"/>
+        <default field="VARNAME_1" expression="" applyOnUpdate="0"/>
+        <default field="NL_NAME_1" expression="" applyOnUpdate="0"/>
+        <default field="HASC_1" expression="" applyOnUpdate="0"/>
+        <default field="TYPE_1" expression="" applyOnUpdate="0"/>
+        <default field="ENGTYPE_1" expression="" applyOnUpdate="0"/>
+        <default field="VALIDFR_1" expression="" applyOnUpdate="0"/>
+        <default field="VALIDTO_1" expression="" applyOnUpdate="0"/>
+        <default field="REMARKS_1" expression="" applyOnUpdate="0"/>
+        <default field="Region" expression="" applyOnUpdate="0"/>
+        <default field="RegionVar" expression="" applyOnUpdate="0"/>
+        <default field="ProvNumber" expression="" applyOnUpdate="0"/>
+        <default field="NEV_Countr" expression="" applyOnUpdate="0"/>
+        <default field="FIRST_FIPS" expression="" applyOnUpdate="0"/>
+        <default field="FIRST_HASC" expression="" applyOnUpdate="0"/>
+        <default field="FIPS_1" expression="" applyOnUpdate="0"/>
+        <default field="gadm_level" expression="" applyOnUpdate="0"/>
+        <default field="CheckMe" expression="" applyOnUpdate="0"/>
+        <default field="Region_Cod" expression="" applyOnUpdate="0"/>
+        <default field="Region_C_1" expression="" applyOnUpdate="0"/>
+        <default field="ScaleRank" expression="" applyOnUpdate="0"/>
+        <default field="Region_C_2" expression="" applyOnUpdate="0"/>
+        <default field="Region_C_3" expression="" applyOnUpdate="0"/>
+        <default field="Country_Pr" expression="" applyOnUpdate="0"/>
+        <default field="DataRank" expression="" applyOnUpdate="0"/>
+        <default field="Abbrev" expression="" applyOnUpdate="0"/>
+        <default field="Postal" expression="" applyOnUpdate="0"/>
+        <default field="Area_sqkm" expression="" applyOnUpdate="0"/>
+        <default field="sameAsCity" expression="" applyOnUpdate="0"/>
+        <default field="ADM0_A3" expression="" applyOnUpdate="0"/>
+        <default field="MAP_COLOR" expression="" applyOnUpdate="0"/>
+        <default field="LabelRank" expression="" applyOnUpdate="0"/>
+        <default field="Shape_Leng" expression="" applyOnUpdate="0"/>
+        <default field="Shape_Area" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="0" field="OBJECTID" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VertexCou" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ISO" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NAME_0" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NAME_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VARNAME_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NL_NAME_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="HASC_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="TYPE_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ENGTYPE_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VALIDFR_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="VALIDTO_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="REMARKS_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="RegionVar" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ProvNumber" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="NEV_Countr" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="FIRST_FIPS" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="FIRST_HASC" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="FIPS_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="gadm_level" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="CheckMe" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_Cod" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_C_1" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ScaleRank" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_C_2" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Region_C_3" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Country_Pr" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="DataRank" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Abbrev" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Postal" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Area_sqkm" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="sameAsCity" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="ADM0_A3" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="MAP_COLOR" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="LabelRank" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Shape_Leng" exp_strength="0" constraints="0" notnull_strength="0"/>
+        <constraint unique_strength="0" field="Shape_Area" exp_strength="0" constraints="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="OBJECTID" exp=""/>
+        <constraint desc="" field="VertexCou" exp=""/>
+        <constraint desc="" field="ISO" exp=""/>
+        <constraint desc="" field="NAME_0" exp=""/>
+        <constraint desc="" field="NAME_1" exp=""/>
+        <constraint desc="" field="VARNAME_1" exp=""/>
+        <constraint desc="" field="NL_NAME_1" exp=""/>
+        <constraint desc="" field="HASC_1" exp=""/>
+        <constraint desc="" field="TYPE_1" exp=""/>
+        <constraint desc="" field="ENGTYPE_1" exp=""/>
+        <constraint desc="" field="VALIDFR_1" exp=""/>
+        <constraint desc="" field="VALIDTO_1" exp=""/>
+        <constraint desc="" field="REMARKS_1" exp=""/>
+        <constraint desc="" field="Region" exp=""/>
+        <constraint desc="" field="RegionVar" exp=""/>
+        <constraint desc="" field="ProvNumber" exp=""/>
+        <constraint desc="" field="NEV_Countr" exp=""/>
+        <constraint desc="" field="FIRST_FIPS" exp=""/>
+        <constraint desc="" field="FIRST_HASC" exp=""/>
+        <constraint desc="" field="FIPS_1" exp=""/>
+        <constraint desc="" field="gadm_level" exp=""/>
+        <constraint desc="" field="CheckMe" exp=""/>
+        <constraint desc="" field="Region_Cod" exp=""/>
+        <constraint desc="" field="Region_C_1" exp=""/>
+        <constraint desc="" field="ScaleRank" exp=""/>
+        <constraint desc="" field="Region_C_2" exp=""/>
+        <constraint desc="" field="Region_C_3" exp=""/>
+        <constraint desc="" field="Country_Pr" exp=""/>
+        <constraint desc="" field="DataRank" exp=""/>
+        <constraint desc="" field="Abbrev" exp=""/>
+        <constraint desc="" field="Postal" exp=""/>
+        <constraint desc="" field="Area_sqkm" exp=""/>
+        <constraint desc="" field="sameAsCity" exp=""/>
+        <constraint desc="" field="ADM0_A3" exp=""/>
+        <constraint desc="" field="MAP_COLOR" exp=""/>
+        <constraint desc="" field="LabelRank" exp=""/>
+        <constraint desc="" field="Shape_Leng" exp=""/>
+        <constraint desc="" field="Shape_Area" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <reuseLastValue/>
+      <dataDefinedFieldProperties/>
+      <widgets/>
+      <previewExpression>"OBJECTID"</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="continents20120404114700542"/>
+    <layer id="RSA_75061939_d0ea_4284_ac2f_498ea563f14a"/>
+    <layer id="buildings_575577ef_4d19_4b95_bbe3_0aa1d54c76fc"/>
+    <layer id="buildings_reprojected_shp_307753c1_266a_4d13_a802_2ddd8d33affc"/>
+  </layerorder>
+  <properties>
+    <DefaultStyles>
+      <ColorRamp type="QString"></ColorRamp>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <Opacity type="double">1</Opacity>
+      <RandomColors type="bool">true</RandomColors>
+    </DefaultStyles>
+    <Digitizing>
+      <AvoidIntersectionsMode type="int">2</AvoidIntersectionsMode>
+    </Digitizing>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+    </Gui>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <CandidatesLinePerCM type="double">5</CandidatesLinePerCM>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPolygonPerCM type="double">2.5</CandidatesPolygonPerCM>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <DrawUnplaced type="bool">false</DrawUnplaced>
+      <PlacementEngineVersion type="int">0</PlacementEngineVersion>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <UnplacedColor type="QString">255,0,0,255</UnplacedColor>
+    </PAL>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <RenderMapTile type="bool">false</RenderMapTile>
+    <SpatialRefSys>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WCSLayers type="QStringList"/>
+    <WCSUrl type="QString"></WCSUrl>
+    <WFSLayers type="QStringList"/>
+    <WFSTLayers>
+      <Delete type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+    </WFSTLayers>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSFeatureInfoUseAttributeFormSettings type="bool">false</WMSFeatureInfoUseAttributeFormSettings>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSTileBuffer type="int">0</WMSTileBuffer>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSGrids>
+      <CRS type="QStringList"/>
+      <Config type="QStringList"/>
+    </WMTSGrids>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMTSLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMTSPngLayers>
+      <Group type="QStringList"/>
+      <Layer type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMTSUrl type="QString"></WMTSUrl>
+  </properties>
+  <dataDefinedServerProperties>
+    <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+    </Option>
+  </dataDefinedServerProperties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author></author>
+    <creation>2000-01-01T00:00:00</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+  <Bookmarks/>
+  <ProjectViewSettings UseProjectScales="0">
+    <Scales/>
+    <DefaultViewExtent xmax="3480857.09259139141067863" ymax="-2822223.64002919849008322" xmin="1197160.12215345399454236" ymin="-4268992.37029862124472857">
+      <spatialrefsys>
+        <wkt>PROJCRS["WGS 84 / NSIDC EASE-Grid 2.0 Global",BASEGEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]],CONVERSION["US NSIDC EASE-Grid 2.0 Global",METHOD["Lambert Cylindrical Equal Area",ID["EPSG",9835]],PARAMETER["Latitude of 1st standard parallel",30,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8823]],PARAMETER["Longitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["False easting",0,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting (X)",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing (Y)",north,ORDER[2],LENGTHUNIT["metre",1]],USAGE[SCOPE["unknown"],AREA["World - 86°S to 86°N"],BBOX[-86,-180,86,180]],ID["EPSG",6933]]</wkt>
+        <proj4>+proj=cea +lat_ts=30 +lon_0=0 +x_0=0 +y_0=0 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>28242</srsid>
+        <srid>6933</srid>
+        <authid>EPSG:6933</authid>
+        <description>WGS 84 / NSIDC EASE-Grid 2.0 Global</description>
+        <projectionacronym>cea</projectionacronym>
+        <ellipsoidacronym>EPSG:7030</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </DefaultViewExtent>
+  </ProjectViewSettings>
+  <ProjectTimeSettings timeStep="1" cumulativeTemporalRange="0" frameRate="1" timeStepUnit="h"/>
+  <ProjectDisplaySettings>
+    <BearingFormat id="bearing">
+      <Option type="Map">
+        <Option type="QChar" value="" name="decimal_separator"/>
+        <Option type="int" value="6" name="decimals"/>
+        <Option type="int" value="0" name="direction_format"/>
+        <Option type="int" value="0" name="rounding_type"/>
+        <Option type="bool" value="false" name="show_plus"/>
+        <Option type="bool" value="true" name="show_thousand_separator"/>
+        <Option type="bool" value="false" name="show_trailing_zeros"/>
+        <Option type="QChar" value="" name="thousand_separator"/>
+      </Option>
+    </BearingFormat>
+  </ProjectDisplaySettings>
+</qgis>
